@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lucri Abogados</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0b0b0b;
+      color:white;
+    }
+
+    header{
+      padding:30px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid rgba(255,255,255,.1);
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#d4af37;
+      letter-spacing:2px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      transition:.3s;
+    }
+
+    nav a:hover{
+      color:#d4af37;
+    }
+
+    .hero{
+      min-height:90vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:40px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      max-width:900px;
+      margin-bottom:20px;
+      color:#d4af37;
+    }
+
+    .hero p{
+      font-size:22px;
+      max-width:800px;
+      color:#d0d0d0;
+      line-height:1.6;
+    }
+
+    .btn{
+      margin-top:40px;
+      display:inline-block;
+      padding:16px 34px;
+      background:#d4af37;
+      color:black;
+      text-decoration:none;
+      border-radius:10px;
+      font-weight:bold;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+    }
+
+    .section{
+      padding:100px 10%;
+    }
+
+    .section h2{
+      font-size:42px;
+      margin-bottom:30px;
+      color:#d4af37;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#151515;
+      padding:30px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#d4af37;
+    }
+
+    footer{
+      padding:40px;
+      text-align:center;
+      border-top:1px solid rgba(255,255,255,.1);
+      color:#aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">LUCRI ABOGADOS</div>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+
+  <h1>
+    Defensa Jurídica Estratégica y Profesional
+  </h1>
+
+  <p>
+    En Lucri Abogados ofrecemos representación legal moderna,
+    confiable y personalizada para empresas y particulares.
+  </p>
+
+  <a class="btn" href="https://wa.me/522201336854">
+    Contactar por WhatsApp
+  </a>
+
+</section>
+
+<section class="section">
+
+  <h2>Áreas de práctica</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Derecho Civil</h3>
+      <p>
+        Contratos, obligaciones, patrimonio y representación legal.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Derecho Mercantil</h3>
+      <p>
+        Protección jurídica empresarial y asesoría corporativa.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Litigio Estratégico</h3>
+      <p>
+        Defensa sólida con enfoque moderno y profesional.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Lucri Abogados — Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
