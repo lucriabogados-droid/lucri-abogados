@@ -186,16 +186,54 @@ export default function LucriAbogadosLandingPage() {
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {tiktokVideos.map((url, index) => (
-            <Card key={url} className="rounded-[1.75rem] border-[#d4af37]/15 bg-[#0b1a33]">
-              <CardContent className="flex h-[440px] flex-col items-center justify-center p-8 text-center">
-                <Video className="mb-5 h-12 w-12 text-[#d4af37]" />
-                <h3 className="text-xl font-semibold text-white">Video legal #{index + 1}</h3>
-                <p className="mt-3 text-slate-300">Consejos jurídicos, prevención legal y explicación clara de temas importantes.</p>
-                <a href={url} target="_blank" rel="noreferrer" className="mt-6 rounded-2xl border border-[#d4af37]/40 px-5 py-3 text-[#f1d06a] transition hover:bg-[#d4af37]/10">
-                  Ver video en TikTok
-                </a>
-              </CardContent>
-            </Card>
+            <Card key={url} className="overflow-hidden rounded-[1.75rem] border-[#d4af37]/15 bg-[#0b1a33]">
+
+  <a href={url} target="_blank" rel="noreferrer">
+
+    <div className="relative h-[360px] w-full overflow-hidden">
+
+      <img
+        src={`/tiktok-${index + 1}.png`}
+        alt={`Vista previa del video legal ${index + 1}`}
+        className="h-full w-full object-cover"
+      />
+
+      <div className="absolute inset-0 flex items-center justify-center bg-black/35">
+
+        <div className="flex h-16 w-16 items-center justify-center rounded-full border border-[#d4af37]/70 bg-[#071225]/80">
+
+          <Video className="h-8 w-8 text-[#d4af37]" />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </a>
+
+  <CardContent className="p-7 text-center">
+
+    <h3 className="text-xl font-semibold text-white">
+      Video legal #{index + 1}
+    </h3>
+
+    <p className="mt-3 text-slate-300">
+      Consejos jurídicos, prevención legal y explicación clara de temas importantes.
+    </p>
+
+    <a
+      href={url}
+      target="_blank"
+      rel="noreferrer"
+      className="mt-6 inline-flex rounded-2xl border border-[#d4af37]/40 px-5 py-3 text-[#f1d06a] transition hover:bg-[#d4af37]/10"
+    >
+      Ver video en TikTok
+    </a>
+
+  </CardContent>
+
+</Card>
           ))}
         </div>
       </section>
