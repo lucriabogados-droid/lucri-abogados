@@ -247,10 +247,17 @@ export default function LucriAbogadosLandingPage() {
       <section id="blog" className="border-y border-[#d4af37]/10 bg-[#061020]">
         <div className="mx-auto max-w-7xl px-6 py-24">
           <div className="mb-12 max-w-2xl">
-            <p className="text-sm uppercase tracking-[0.3em] text-[#d4af37]">Blog jurídico</p>
-            <h2 className="mt-4 text-4xl font-semibold text-white">Artículos semanales para atraer clientes desde Google.</h2>
-            <p className="mt-5 text-slate-300">Publicar contenido útil ayuda a generar confianza, mejorar presencia digital y alimentar tu Perfil de Google Business con novedades.</p>
-          </div>
+            <p className="text-sm uppercase tracking-[0.3em] text-[#d4af37]">
+  Blog jurídico
+</p>
+
+<h2 className="mt-4 text-4xl font-semibold text-white">
+  Blog Jurídico
+</h2>
+
+<p className="mt-5 text-slate-300">
+  Publicaciones legales, análisis y contenido jurídico relevante para clientes, empresas y emprendedores.
+</p>
           <div className="grid gap-6 md:grid-cols-3">
             {blogPosts.map((post) => (
               <Card key={post.title} className="rounded-[1.75rem] border-[#d4af37]/15 bg-[#0b1a33] transition hover:border-[#d4af37]/50">
