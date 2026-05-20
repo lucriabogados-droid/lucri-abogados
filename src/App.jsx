@@ -296,6 +296,9 @@ export default function LucriAbogadosLandingPage() {
 <p className="mt-5 text-slate-300">
   Publicaciones legales, análisis y contenido jurídico relevante para clientes, empresas y emprendedores.
 </p>
+            </div>
+
+<div className="grid gap-6 md:grid-cols-3">
           <div className="grid gap-6 md:grid-cols-3">
             {blogPosts.map((post) => (
               <Card key={post.title} className="rounded-[1.75rem] border-[#d4af37]/15 bg-[#0b1a33] transition hover:border-[#d4af37]/50">
